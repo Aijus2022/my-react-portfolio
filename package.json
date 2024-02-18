@@ -2,7 +2,7 @@
   "name": "my-react-portfolio",
   "version": "1.0.0",
   "description": "\"# my-react-portfolio\"",
-  "main": "index.js",
+  "main": "index.jsx",
   "dependencies": {
     "ansi-escapes": "^4.3.2",
     "ansi-regex": "^5.0.1",
@@ -297,7 +297,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Aijus2022/my-react-portfolio/blob/main/READMI.md"
+    "url": "https://github.com/Aijus2022/my-react-portfolio.git"
   },
   "keywords": [
     "react",
