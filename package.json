@@ -264,6 +264,7 @@
     "to-regex-range": "^5.0.1",
     "trim-repeated": "^1.0.0",
     "type-detect": "^4.0.8",
+    "type": "module",
     "type-fest": "^0.21.3",
     "undici-types": "^5.26.5",
     "universalify": "^2.0.1",
@@ -297,7 +298,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Aijus2022/my-react-portfolio.git"
+    "url": "git+https://github.com/Aijus2022/my-react-portfolio.git"
   },
   "keywords": [
     "react",
@@ -307,5 +308,9 @@
     "vite"
   ],
   "author": "Aijamal Jusupova",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Aijus2022/my-react-portfolio/issues"
+  },
+  "homepage": "https://github.com/Aijus2022/my-react-portfolio#readme"
 }
