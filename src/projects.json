@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "title": "Project 1",
+      "deployedLink": "https://example.com/project1",
+      "githubLink": "https://github.com/example/project1",
+      "image": "project1.png",
+      "description": "Description of Project 1"
+    },
+    {
+      "id": 2,
+      "title": "Project 2",
+      "deployedLink": "https://example.com/project2",
+      "githubLink": "https://github.com/example/project2",
+      "image": "project2.png",
+      "description": "Description of Project 2"
+    },
+    {
+      "id": 3,
+      "title": "Project 3",
+      "deployedLink": "https://example.com/project3",
+      "githubLink": "https://github.com/example/project3",
+      "image": "project3.png",
+      "description": "Description of Project 3"
+    },
+    {
+      "id": 4,
+      "title": "Project 4",
+      "deployedLink": "https://example.com/project4",
+      "githubLink": "https://github.com/example/project4",
+      "image": "project4.png",
+      "description": "Description of Project 4"
+    },
+    {
+      "id": 5,
+      "title": "Project 5",
+      "deployedLink": "https://example.com/project5",
+      "githubLink": "https://github.com/example/project5",
+      "image": "project5.png",
+      "description": "Description of Project 5"
+    },
+    {
+      "id": 6,
+      "title": "Project 6",
+      "deployedLink": "https://example.com/project6",
+      "githubLink": "https://github.com/example/project6",
+      "image": "project6.png",
+      "description": "Description of Project 6"
+    }
+  ]
+  
