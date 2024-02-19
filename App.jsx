@@ -10,12 +10,12 @@ function App() {
   return (
     <Router>
       <div>
-        <Header />
-        <Switch>
-          <Route exact path="/" component={Home} /> {/* Render Home component for root URL */}
+        <Route exact path="/header" component={Header} /> 
+         <Switch>
+          <Route exact path="/home" component={Home} /> 
           <Route exact path="/projects" component={Projects} />
-          <Route path="/projects/:projectId" component={Project} /> {/* Add this route for the Project component */}
-          <Route path="/contact" component={Contact} />
+          <Route path="/projects/:projectId" component={Project} /> 
+          <Route exact path="/contact" component={Contact} />
         </Switch>
       </div>
     </Router>

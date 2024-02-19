@@ -9,25 +9,20 @@ function getAllFiles(dirPath, arrayOfFiles) {
   arrayOfFiles = arrayOfFiles || [];
 
   files.forEach(function(file) {
-    if (fs.statSync(dirPath + '/' + file).isDirectory()) {
-      arrayOfFiles = getAllFiles(dirPath + '/' + file, arrayOfFiles);
+    const fullPath = path.join(dirPath, file);
+    if (fs.statSync(fullPath).isDirectory()) {
+      arrayOfFiles = getAllFiles(fullPath, arrayOfFiles);
     } else {
-      arrayOfFiles.push(path.join(__dirname, dirPath, '/', file));
+      arrayOfFiles.push(fullPath);
     }
   });
 
   return arrayOfFiles;
 }
 
-function getJsxFiles() {
-  const allFiles = getAllFiles('src');
-  return allFiles.filter((file) => file.endsWith('.js') || file.endsWith('.jsx'));
-}
-
-const jsxFiles = getJsxFiles();
-
+const allFiles = getAllFiles('src');
 const entry = {};
-jsxFiles.forEach((file) => {
+allFiles.forEach((file) => {
   const relativePath = path.relative(__dirname, file);
   const entryName = relativePath.replace(/\.(js|jsx)$/, '');
   entry[entryName] = `./${relativePath}`;
@@ -35,20 +30,10 @@ jsxFiles.forEach((file) => {
 
 export default defineConfig({
   plugins: [reactRefresh()],
-  css: {
-    modules: false,
-  },
-// vite.config.js
-
-export : {
   build: {
     rollupOptions: {
       input: entry,
       external: ['@testing-library/react', '@testing-library/jest-dom/extend-expect'], // Exclude @testing-library/react and @testing-library/jest-dom/extend-expect from bundle
     },
   },
-  // Specify the input file here
-  input: 'index.jsx',
-},
-}
-)
+});

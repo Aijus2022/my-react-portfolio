@@ -1,13 +1,9 @@
-// App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from './Header';
-import Home from './Home';
-import Projects from './Projects';
-import Contact from './Contact';
-
-
-
+import Header from './Header'; // Assuming Header.jsx is exported as default
+import Home from './Home'; // Assuming Home.jsx is exported as default
+import Projects from './Projects'; // Assuming Projects.jsx is exported as default
+import Contact from './Contact'; // Assuming Contact.jsx is exported as default
 
 function App() {
   return (
@@ -27,3 +23,4 @@ function App() {
 }
 
 export default App;
+
