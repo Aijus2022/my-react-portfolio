@@ -22,8 +22,7 @@ This is a portfolio website built using React.js to showcase my projects, skills
 ## Usage
 
 1. Clone the repository:   
-   git clone [https://github.com/yourusername/my-react-portfolio.git
-   ](https://github.com/Aijus2022/my-react-portfolio/tree/gh-pages)
+   git clone (https://github.com/Aijus2022/my-react-portfolio/tree/gh-pages)
 2.  Install dependencies:
     npm install
 
