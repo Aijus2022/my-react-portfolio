@@ -22,11 +22,15 @@ function getAllFiles(dirPath, arrayOfFiles) {
 
 const allFiles = getAllFiles('src');
 const entry = {};
+
 allFiles.forEach((file) => {
   const relativePath = path.relative(__dirname, file);
   const entryName = relativePath.replace(/\.(js|jsx)$/, '');
   entry[entryName] = `./${relativePath}`;
 });
+
+// Add index.html as an entry point
+entry['index.html'] = './src/index.html';
 
 export default defineConfig({
   plugins: [reactRefresh()],
@@ -37,4 +41,5 @@ export default defineConfig({
     },
   },
 });
+
 

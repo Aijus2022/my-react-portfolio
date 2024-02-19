@@ -312,7 +312,7 @@
   "bugs": {
     "url": "https://github.com/Aijus2022/my-react-portfolio/issues"
   },
-  "homepage": "https://github.com/Aijus2022/my-react-portfolio#readme",
+  "homepage": "https://github.com/Aijus2022/my-react-portfolio/blob/gh-pages/src/index.html",
   "directories": {
     "test": "tests"
   }
