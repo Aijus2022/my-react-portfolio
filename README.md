@@ -35,10 +35,3 @@ The application is deployed using GitHub Pages. Any changes pushed to the gh-pag
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for detail
-
-## Customisation 
-Feel free to customise the content according to your specific application. You can add more sections, such as a section about project structure, contributing guidelines, or acknowledgments, depending on your needs.
-  
-
- 
-
