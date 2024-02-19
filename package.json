@@ -312,5 +312,8 @@
   "bugs": {
     "url": "https://github.com/Aijus2022/my-react-portfolio/issues"
   },
-  "homepage": "https://github.com/Aijus2022/my-react-portfolio#readme"
+  "homepage": "https://github.com/Aijus2022/my-react-portfolio#readme",
+  "directories": {
+    "test": "tests"
+  }
 }

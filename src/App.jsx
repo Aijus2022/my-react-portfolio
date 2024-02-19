@@ -1,26 +1,27 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from './Header'; // Assuming Header.jsx is exported as default
-import Home from './Home'; // Assuming Home.jsx is exported as default
-import Projects from './Projects'; // Assuming Projects.jsx is exported as default
-import Contact from './Contact'; // Assuming Contact.jsx is exported as default
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from 'Header';
+import Home from 'Home';
+import Projects from 'Projects';
+import Project from 'Project'; 
+import Contact from 'Contact';
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Header />
-        <main>
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/projects" component={Projects} />
-            <Route path="/contact" component={Contact} />
-          </Switch>
-        </main>
+      <div>
+        <Route exact path="header" element=<Header /> /> 
+         <Routes>
+          <Route exact path="home" element=<Home /> /> 
+          <Route exact path="projects" element=<Projects /> />
+          <Route path="projects/:projectId" element=<Project /> /> 
+          <Route exact path="contact" element=<Contact /> />
+        </Routes>
       </div>
     </Router>
   );
 }
 
 export default App;
+
 
