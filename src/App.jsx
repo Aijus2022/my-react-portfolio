@@ -1,5 +1,6 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useState } from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from './Header'; // Corrected import paths
 import Home from './Home'; // Corrected import paths
 import Projects from './Projects'; // Corrected import paths
