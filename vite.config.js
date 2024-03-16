@@ -30,7 +30,7 @@ allFiles.forEach((file) => {
 });
 
 // Add index.html as an entry point
-entry['index.html'] = './src/index.html';
+entry['index.html'] = '/index.html';
 
 export default defineConfig({
   plugins: [reactRefresh()],
