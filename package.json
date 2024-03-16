@@ -298,7 +298,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Aijus2022/my-react-portfolio.git"
+    "url": "https://aijus2022.github.io/my-react-portfolio/"
   },
   "keywords": [
     "react",
@@ -312,7 +312,7 @@
   "bugs": {
     "url": "https://github.com/Aijus2022/my-react-portfolio/issues"
   },
-  "homepage": "https://github.com/Aijus2022/my-react-portfolio/blob/gh-pages/src/index.html",
+  "homepage": "https://aijus2022.github.io/my-react-portfolio/",
   "directories": {
     "test": "tests"
   }
